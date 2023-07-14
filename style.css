@@ -1,0 +1,209 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+
+/*Barras*/
+.bar {
+    background-color: #f9f9fb;
+    height: 30px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+#bar_B99{
+    background-color: #f9f9fb;
+    height: 30px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    background: url(./assets/images/Brooklyn_Nine-Nine/BROOKLYN_NINE-NINE.png);
+    background-size: contain;
+}
+
+#bar_Friends{
+    background-color: #f9f9fb;
+    height: 30px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    background: url(./assets/images/Friends/FRIENDS.png);
+    background-size: contain;
+}
+
+#bar_TedLasso{
+    background-color: #f9f9fb;
+    height: 30px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    background: url(./assets/images/Ted_Lasso/TED_LASSO.png);
+    background-size: contain;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.logo{
+    padding-top: 2px;
+}
+
+/*Left Links*/
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+.current-page{
+    font-weight: bold;
+}
+
+
+/*Footer*/
+footer {
+    min-height: 20px;
+    border-top: solid 1px #cdcdcd;
+}
+
+footer ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: underline blue;
+}
+
+
+/*Images*/
+figure{
+    text-align: center;
+    background-color: #cdcdcd;
+    width: 210px;
+    float: left;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+figure img{
+    width: 200px;
+    margin-top: 5px;
+}
+
+
+/*Form*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    width: 100px;
+}
+
+
+/*Page Not Created*/
+.notcreated{
+    color: red;
+    text-decoration: underline;
+}
+
+
+/*Table*/
+table{
+    margin-top: 16px;
+}
+
+tr{
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(211, 211, 211, 0.45);
+}
+
+tbody tr:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.table-head1{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.table-head2{
+    font-weight: 600;
+}
+
+.verde{
+    background-color: rgba(144, 238, 144, 0.55);
+}
+
+.azul{
+    background-color: rgba(173, 216, 230, 0.55);
+}
+
+.vermelho{
+    background-color: rgba(240, 128, 128, 0.55);
+}
+
+.amarelo{
+    background-color: rgba(255, 255, 0, 0.55);
+}
+
+.blank{
+    background-color: white;
+}
+
+/*Botão de Subir*/
+#seta{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgb(86, 86, 86);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+}
+#seta:hover{
+    -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.56); 
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.56);
+}
+
+/*Lista do Elenco Ted Lasso*/
+.lista_elenco{
+    list-style: disc;
+}
+
+span{
+    font-weight: 600;
+}
+
+/*Perguntas Frequentes*/
+details{
+    font-weight: 500;
+}
+details p{
+    background-color: rgba(128, 128, 128, 0.256);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}

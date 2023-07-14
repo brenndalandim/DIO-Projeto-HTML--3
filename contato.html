@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries de Televisão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo_Idea.png" width="200" alt="logo do site idea"></a>
+        </div>
+    </header>   
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <nav class="sidebar">
+            <h2>Séries de Televisão</h2>
+            <ul>
+                <li><a href="Brooklyn99.html">Brooklyn 99</a></li>
+                <li><a href="Friends.html">Friends</a></li>
+                <li><a href="TedLasso.html">Ted Lasso</a></li>
+                <li><a href="notcreated.html" class="notcreated">The Crown</a></li>
+                <li><a href="notcreated.html" class="notcreated">The Office</a></li>
+            </ul>
+        </nav>
+
+        <main id="contato">
+          <h2>Formulário de Contato</h2>
+          <hr>
+          <p>Através desse formulário nos envie um <strong>arquivo .pdf</strong> da página criada para que possamos verificar e entrar em contato com você em breve caso ela seja selecionado para fazer parte do nosso site. No <strong>assunto</strong> por favor coloque o nome da página que foi criada.
+          </p>
+          <form method="get">
+            <label>
+                Nome:<sup>*</sup>
+                <input type="text" name="nome" required minlength="2">
+            </label>
+            <label>
+                Email:<sup>*</sup>
+                <input type="email" name="email" required placeholder="ex.: eu@email.com">
+            </label>
+            <label>
+                Assunto:<sup>*</sup>
+                <input type="text" name="assunto" required placeholder="Nome da página criada" minlength="3">
+            </label>
+            <label>
+                Arquivo:<sup>*</sup>
+                <input type="file" name="arquivo" required accept="application/pdf">
+            </label>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <br>
+        <sup><a href="index.html">(voltar)</a></sup>
+        </main>
+
+        <aside class="anchors">
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>Quero enviar um artigo</summary>
+                <p>Basta nos enviar no formulário ao lado um arquivo .pdf do artigo, faremos uma revisão e retornaremos em breve com a resposta</p>
+            </details>
+            <details>
+                <summary>Contato não relacionado a novo artigo</summary>
+                <p>Por enquanto só estamos recebendo contatos para novos artigos, em breve disponibilizaremos uma nova forma de contato para outros assuntos</p>
+            </details>
+        </aside>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Declaração sobre Cookies</a></li>
+            <li><a href="#">Sobre o Projeto IDEA</a></li>
+        </ul>
+    </footer>
+
+    <a id="seta" href="#header">▲</a>
+
+</body>
+</html>
